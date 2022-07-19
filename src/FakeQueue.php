@@ -22,7 +22,7 @@ class FakeQueue extends \yii\queue\Queue
     {
         /** @var \yii\queue\JobInterface $unserializedData */
         $unserializedData = $this->serializer->unserialize($message);
-        if ($this->strictJobType && $unserializedData instanceof \yii\queue\JobInterface) {
+        if ($unserializedData instanceof \yii\queue\JobInterface) {
             $unserializedData->execute($this);
         }
     }
