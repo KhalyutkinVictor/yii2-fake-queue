@@ -8,6 +8,13 @@ namespace khalyutkin\fakeQueue;
 class FakeQueue extends \yii\queue\Queue
 {
     
+    public function __set($name, $value)
+    {
+        if (property_exists($this, $name)) {
+            $this[$name] = $value;
+        }
+    }
+    
     /**
      * {@inheritDoc}
      */
