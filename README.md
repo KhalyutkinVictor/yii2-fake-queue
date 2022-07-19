@@ -12,3 +12,15 @@ Either run
 ```
 composer require khalyutkin/yii2-fake-queue
 ```
+
+If you issues try
+
+```
+composer self-update --2
+```
+
+Then 
+
+```
+composer require khalyutkin/yii2-fake-queue
+```
