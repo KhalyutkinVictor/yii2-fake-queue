@@ -13,7 +13,7 @@ Either run
 composer require khalyutkin/yii2-fake-queue
 ```
 
-If you issues try
+If you got some issues try
 
 ```
 composer self-update --2
